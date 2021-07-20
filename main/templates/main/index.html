@@ -1,0 +1,113 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Новая реклама{% endblock %}
+
+
+{% block content %}
+    <main class="main">
+        <section class="top">
+            <div class="content__top">
+                <div class="content__top-text">
+                    <p>Мы изготовим вывеску любого формата и сложности.</p>
+                    <p>Бесплатный выезд на замеры.</p>
+                    <p>Оперативный детальный расчёт.</p>
+                </div>
+            </div>
+            <div class="top__inner">
+            <div class="top__slider">
+              <div class="top__slider-item">
+                <img class="top__slider-img" src="../static/main/img/slider/1.jpg" alt="">
+              </div>
+              <div class="top__slider-item">
+                <img class="top__slider-img" src="../static/main/img/slider/2.jpg" alt="">
+              </div>
+              <div class="top__slider-item">
+                <img class="top__slider-img" src="../static/main/img/slider/3.jpg" alt="">
+              </div>
+              <div class="top__slider-item">
+                <img class="top__slider-img" src="../static/main/img/slider/4.jpg" alt="">
+              </div>
+              <div class="top__slider-item">
+                <img class="top__slider-img" src="../static/main/img/slider/5.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="middle">
+            <div class="container">
+                <div class="product">
+                    <div class="product__inner">
+                        <div class="product__inner-title">
+                            <a class="product__inner-kn" href="{% url 'service' %}" >
+                                <h2>Мы изготавливаем</h2>
+                            </a>
+                        </div>
+                        <div class="product__inner-content">
+                            <div class="product__content">
+                                <a class="product__content-item" href="{% url 'service' %}#bukvy">
+                                    <img class="product__content-img" src="../static/main/img/product/prod/1.png" alt="" >
+                                    <div class="product__content-info">
+                                        <div class="product__content-title">
+                                            <h3>Объемные буквы</h3>
+                                        </div>
+                                        <div class="product__content-text">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__content">
+                                <a class="product__content-item" href="{% url 'service' %}#vuves">
+                                    <img class="product__content-img" src="../static/main/img/product/prod/2.png" alt="" >
+                                    <div class="product__content-info">
+                                        <div class="product__content-title">
+                                            <h3>Вывески</h3>
+                                        </div>
+                                        <div class="product__content-text">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__content">
+                                <a class="product__content-item" href="{% url 'service' %}#light">
+                                    <img class="product__content-img" src="../static/main/img/product/prod/3.png" alt="" >
+                                    <div class="product__content-info">
+                                        <div class="product__content-title">
+                                            <h3>Световые короба</h3>
+                                        </div>
+                                        <div class="product__content-text">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__content">
+                                <a class="product__content-item" href="{% url 'service' %}#tabl">
+                                    <img class="product__content-img" src="../static/main/img/product/prod/4.png" alt="" >
+                                    <div class="product__content-info">
+                                        <div class="product__content-title">
+                                            <h3>Таблички и указатели</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__content">
+                                <a class="product__content-item" href="{% url 'service' %}#krush">
+                                    <img class="product__content-img" src="../static/main/img/product/prod/5.png" alt="" >
+                                    <div class="product__content-info">
+                                        <div class="product__content-title">
+                                            <h3>Крышные установки</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

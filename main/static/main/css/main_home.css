@@ -1,0 +1,230 @@
+.content__top{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.content__top-text{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
+    color: #FAE500;
+}
+.top__inner{
+    position:relative;
+}
+.top__slider{
+    position:relative;
+    padding: 0 60px;
+}
+.top__slider-item{
+    display:flex !important;
+    justify-content: center;
+    align-item: center;
+}
+.top__slider-img{
+    max-width: 1050px;
+    height: 600px;
+    object-fit: cover;
+}
+.top__slider-info{
+    max-width: 645px;
+}
+.slick-list {
+	overflow: hidden;
+	margin-left: 40px;
+    margin-right: 40px;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+/* Стрелки слайдов */
+.top__slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 30px 0px 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 0;
+    width:60px;
+    height:60px;
+}
+.top__slider .slick-arrow.slick-prev{
+	left: 5px;
+	background: url('../img/kn/left_arr.png') 0 0 / 100% no-repeat;
+	border:none;
+}
+.top__slider .slick-arrow.slick-next{
+	right: 5px;
+	background: url('../img/kn/rigth_arr.png') 0 0 / 100% no-repeat;
+	border:none;
+}
+.top__slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slick-dots{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-dots li{
+    margin: 5px 15px;
+}
+.top__slider .slick-dots button{
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #000;
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+}
+.top__slider .slick-dots li.slick-active button{
+	background: #FAE500;
+}
+.middle{
+    padding-bottom: 30px;
+    position:relative;
+}
+.product__inner-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.product__inner-title{
+    text-align: center;
+    margin: 0px auto;
+    padding: 30px 0px;
+    font-size: 20px;
+}
+.product__content{
+    text-align: center;
+    margin: 15px 30px 15px 30px;
+    padding: 15px 15px 15px 15px;
+    max-width: 220px;
+    max-height: 280px;
+}
+.product__content-item:hover{
+    color: #FFF;
+}
+.product__content-img{
+    margin: auto;
+    max-width: 100%;
+    display: block;
+    width: 130px;
+    transition: 0.5s ease-out;
+}
+.product__content-img:hover{
+    transform: scale(1.5)
+}
+.product__content-info{
+    margin: 15px 0;
+}
+.product__content-title{
+    color: #FAE500;
+}
+.product__content-text{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+/* _______________________________Adaptive_____________________________________*/
+
+@media (max-width: 1250px){
+    .top__slider-img {
+        max-width: 900px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1120px){
+    .top__slider-img {
+        max-width: 800px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1030px){
+    .top__slider-img {
+        max-width: 700px;
+        height: 400px;
+    }
+}
+@media (max-width: 930px){
+    .top__slider-img {
+        max-width: 600px;
+        height: 350px;
+    }
+    .top__slider{
+        padding: 0 20px;
+    }
+    .top__slider .slick-arrow {
+        margin: -30px 5px 0px 5px;
+    }
+}
+
+@media (max-width: 768px){
+    .top__slider {
+            padding: 0px;
+    }
+    .slick-list {
+            margin-left: 0px;
+            margin-right: 0px;
+    }
+    .top__slider-img {
+        max-width: 640px;
+        height: 320px;
+    }
+    .top__slider .slick-arrow.slick-prev{
+    	background: none;
+    }
+    .top__slider .slick-arrow.slick-next{
+    	background: none;
+    }
+}
+
+@media (max-width: 640px){
+    .top__slider-img {
+        max-width: 550px;
+        height: 280px;
+    }
+}
+@media (max-width: 550px){
+    .content__top-text{
+        padding: 0px 5px;
+    }
+
+    .top__slider-img {
+        max-width: 480px;
+        height: 300px;
+    }
+
+}
+@media (max-width: 420px){
+
+    .top__slider-img {
+        max-width: 400px;
+        height: 200px;
+    }
+}
+@media (max-width: 375px){
+
+    .top__slider-img {
+        max-width: 355px;
+        height: 180px;
+    }
+
+}
+@media (max-width: 355px){
+
+    .top__slider-img {
+        max-width: 310px;
+        height: 150px;
+    }
+
+}
